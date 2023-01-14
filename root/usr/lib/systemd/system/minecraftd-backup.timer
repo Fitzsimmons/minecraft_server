@@ -1,0 +1,9 @@
+[Unit]
+Description=Daily minecraft Server Backup
+
+[Timer]
+OnCalendar=*-*-* 04,10,16,22:00:00
+Persistent=true
+
+[Install]
+WantedBy=multi-user.target

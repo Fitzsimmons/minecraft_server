@@ -1,0 +1,4 @@
+minecraft.example.com {
+        root * /srv/http/overviewer
+        file_server
+}

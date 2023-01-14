@@ -1,0 +1,12 @@
+[Unit]
+Description=minecraft Overviewer
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/ubuntu/run_overviewer.sh
+User=ubuntu
+Group=ubuntu
+
+[Install]
+WantedBy=multi-user.target

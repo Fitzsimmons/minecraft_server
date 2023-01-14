@@ -1,0 +1,12 @@
+[Unit]
+Description=minecraft Server Offsite Backups
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/rclone sync /srv/minecraft/backup/ minecraft_backup:archive/minecraft_backups
+User=ubuntu
+Group=minecraft
+
+[Install]
+WantedBy=multi-user.target

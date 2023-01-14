@@ -1,0 +1,9 @@
+[Unit]
+Description=minecraft Server Offsite Backups
+
+[Timer]
+OnCalendar=*-*-* 04,10,16,22:05:00
+Persistent=true
+
+[Install]
+WantedBy=multi-user.target
